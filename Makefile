@@ -22,7 +22,7 @@ OBJS	= $(SRCS:.c=.o)
 CFLAGS = -I ./include/
 CFLAGS += -Wall -Wextra
 
-all: $(NAME) message
+all: $(NAME) joker
 
 $(NAME): $(OBJS)
 	 $(CC) $(OBJS) -o $(NAME) $(LDFLAGS)
@@ -54,7 +54,7 @@ LINE_RETURN	=	$(ECHO) ""
 COLOR_THEME	=	$(GREEN_C)
 DEBUG_THEME	=	$(CYAN_C)
 
-message:
+joker:
 
 	@$(ECHO) $(BOLD_T)"               "$(YELLO_C)"_"$(DEFAULT)
 	@$(ECHO) $(BOLD_T)"              "$(YELLO_C)"(_)          "$(GREEN_C)"_"$(DEFAULT)
